@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class IngresoDeDatos {
@@ -11,7 +12,7 @@ public class IngresoDeDatos {
                 try {
                     num1 = sc.nextInt();
                     incorrecto = false;
-                } catch (NumberFormatException formatException) {
+                } catch (InputMismatchException mismatchException) {
                     System.out.println("No ingresaste un número.");
                     incorrecto = true;
                 }
@@ -21,7 +22,7 @@ public class IngresoDeDatos {
                 try {
                     num2 = sc.nextInt();
                     incorrecto = false;
-                } catch (NumberFormatException formatException) {
+                } catch (InputMismatchException mismatchException) {
                     System.out.println("No ingresaste un número.");
                     incorrecto = true;
                 }
